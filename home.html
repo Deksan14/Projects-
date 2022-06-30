@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="css.css" media="screen" />
+  </head>
+  <body background="/pics/prva.jpg">
+    <center><h1 class="header">NBA Players Home Page</h1></center>
+    <form id="form" action="players.html" onsubmit="validation()">
+      <div class="container">
+        <label for="username">Username : </label>
+        <input
+          type="text"
+          placeholder="Enter Username"
+          id="username"
+          name="name"
+          minlength="3"
+          required
+        />
+        <button id="submit">Submit</button>
+      </div>
+    </form>
+    <script src="js.js"></script>
+  </body>
+</html>

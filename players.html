@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Players Page</title>
+    <link rel="stylesheet" type="text/css" href="css.css" media="screen" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body class="players">
+    <center><h1>NBA Players</h1></center>
+    <form>
+      <div class="navbar">
+        <div class="logo_container">
+          <div class="logo_div">
+            <img src="/pics/logo.jpg" alt="" class="logo" />
+          </div>
+          <div class="user">Username:<span id="result-username"> </span></div>
+        </div>
+      </div>
+      <div class="table_container">
+        <div id="spinner"></div>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Team</th>
+              <th>City</th>
+            </tr>
+          </thead>
+          <tbody id="playersTable"></tbody>
+        </table>
+      </div>
+    </form>
+    <script src="js.js"></script>
+  </body>
+</html>

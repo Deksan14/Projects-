@@ -1,0 +1,126 @@
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  width: 100% 100%;
+  height: 100% 100%;
+  background-size: cover;
+}
+button {
+  background-color: #2b802e;
+  color: orange;
+  padding: 8px;
+  margin: 4px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  place-content: auto;
+  width: auto;
+  margin: 3px 0;
+  padding: 5px 9px;
+  display: inline-block;
+  border: 2px solid green;
+  box-sizing: border-box;
+}
+button:hover {
+  opacity: 0.7;
+}
+
+.container {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  background-color: rgb(76, 131, 150);
+}
+.header {
+  color: white;
+}
+
+input.invalid {
+  border-color: red;
+}
+
+.logo_container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navbar {
+  width: 100%;
+  overflow: hidden;
+  height: 70px;
+  line-height: 70px;
+  background: blue;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+}
+.logo {
+  width: 70px;
+  float: left;
+}
+.players {
+  background-color: white;
+}
+
+.user {
+  width: 100px;
+  float: right;
+  color: white;
+}
+
+.table {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#spinner {
+  visibility: hidden;
+  width: 80px;
+  height: 80px;
+
+  border: 2px solid #f3f3f3;
+  border-top: 3px solid #f25a41;
+  border-radius: 100%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#spinner.show {
+  visibility: visible;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
